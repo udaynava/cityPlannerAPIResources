@@ -1,4 +1,40 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<b> Four active API end points: </b>
+
+1. “/persons” -> fetch all the persons living in the city
+No query parameters needed
+
+2. “/carsonastreet” - Fetch all cars given a 'streetname'
+Query parameter: “streetname”
+Sample reoute - "/api/v1/carsonastreet?streetname=Dorothy Crest"
+
+3. “/owners” -> "Fetch Owner/Owners of a vehicle, given the 'licenseplate'"
+Query parameter: “licenseplate”
+
+Sample route -> "/api/v1/owners?licenseplate=7335768"
+
+4. ”fulladdress” -> "Fetch full address and street details of a house,
+                     given a person's first and last name"
+Query parameters: firstname, lastname
+
+Sample route - "/api/v1/fulladdress?firstname=Kaylee&lastname=Ward"
+
+Key points:
+
+1. All four API routes should be suffixed with 'v1'
+    sample: 'api/v1/{endpoint}'
+
+2. Please use the below give bearer token for the authorization
+
+Bearer token:
+
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiYTQ1NmU4N2E5MmZmNDJkM2E1N2JkNzExMGYzYTgwYTVkMmZhMTdhMTJlZTgwZTMwM2QzZGYwZDhhMjEyYjQ5ZjA3NTUzZTA0NWE4YjU1NDEiLCJpYXQiOjE2NDI5NzQ1ODIuNzA5NTg4LCJuYmYiOjE2NDI5NzQ1ODIuNzA5NTkzLCJleHAiOjE2NzQ1MTA1ODIuNjY1NjU2LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.b7XWO_ujpv56FjVyJ8mMbYmnYgeKjWI4YeYcp0fCn5ORrQkx4kCLOASYA7ulHi5G5eZb0LKQL4BrwC95CXHahZKERV5WHg28l9PfA0DzVFiaF9cZTUv5l8J8JTMSA7L8deAqycTHDBWvZdlou19UuUhSVdmtIOLnxgByqeYP1iqP04RjNepdTGJzeRwl2VkMaq5z7QtE55EO8cII3mErcr2mL02PLItgdPCeLhb9Ky95lgyXderNIpwGVgAFHocpiXgsJMotUYaBiuRjokECwz9r_nL2jsu04aZ_t5YWmtWnhdTQdl_ukh6U9J8tOl7Q17qZYZQC716z6xXwdiSZNpkFWLZByjspvlzDJBmkVv4alf3pViqK1Ka2CW5oN4pu1MN1M733SLSK8OqKsebdpqYubSeiRLhljo0rDtk-LOPD3X-vZ7_Z-InvGByU1_YBSoiEHYZVOWEN5X_KaOt7VFiDH3uqaSjh_JkFOKD32gl7_FrQGMnEa9vGB5-cnou8jdhN8zfq6ClR9rev4Hv8tkkVmAfDZAKeUOhXbv58cb8zPZxDnEPJ9OeQrtripw5Tlh-xoPLnM0X42DxxosuR7PZG01iT2fM-rV_Bzu5j0m16wDeyRscZzdQtjk__zzJWIk-PBD5Z5kfPCTm_kfAr4fRUECI9VQ6SuJC9WQPO4uk"
+
+
+3. PHPUnit test cases are also available at “tests/versionOneApiTest.php”
+Command to run the test cases - "./vendor/bin/phpunit"
+
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -63,4 +99,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
